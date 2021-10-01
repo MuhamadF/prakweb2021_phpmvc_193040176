@@ -4,7 +4,7 @@ class Home extends Controller {
     public function index() {
 
       $data['judul'] = 'Home';
-      $data['nama'] = 'Muhamad F';
+      $data['nama'] = $this->model('User_model')->getUser();
       $data['pekerjaan'] = "Mahasiswa";
       $data['umur'] = 21;
 
